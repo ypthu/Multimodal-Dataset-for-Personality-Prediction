@@ -1,4 +1,4 @@
-# Multimodal-dataset-for-mixed-emotion-recognition
+# Multimodal-dataset-for-Personality-Prediction
 This file introduces the related source code of the project "Multimodal Dataset for Personality Prediction".
 
 ## 1. General Information
@@ -11,7 +11,7 @@ This folder contains the source code (Matlab and Python scripts) used for data p
 6. fea4eeg.py: This python script extracts differential entropy (DE) features from 5 frequency bands (i.e., \delta (1-3Hz), \theta (4-7Hz), \alpha (8-13Hz), \beta (14-30Hz) and \gamma (31-50Hz)) of each channel (totally 18 channels).
 7. perifeaext.py: The function of this script is to extract both time domain and frequency domain features from GSR and PPG signals. Note that preprocessing steps (band pass filtering) are implemented for both GSR and PPG before feature extraction.
 8. fea4video.py: This script implements features from video clips using pretrained VGG model, which is defined in models.py.
-9. PrepareFeatures4Subj.m: This matlab script puts EEG features, GSR features, PPG features and LBP-TOP features together.
+9. PrepareFeatures4Subj.m: This matlab script puts EEG features, GSR features, PPG features and VGG features together.
 10. PrepareData4CLS_SubDep.m: The PrepareData4CLS_SubDep function helps to prepare the training set and test set for positive, negative and mixed emotion classification. The signal data of each trial is divided into two parts according to 4:1, and the first and second parts of all trials of a subject form the training and test set respectively. 
 11. CLS.py: We implement personality prediction in this script. We test combinations of features from different modalities and four classifiers (MLP, kNN, SVM and RF). The experiment is carried out in a 5-fold cross validation across all subjects.
  
