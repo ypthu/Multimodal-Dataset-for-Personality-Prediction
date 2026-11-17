@@ -14,6 +14,7 @@ This folder contains the source code (Matlab and Python scripts) used for data p
 9. PrepareFeatures4Subj.m: This matlab script puts EEG features, GSR features, PPG features and VGG features together.
 10. PrepareData4CLS_SubDep.m: The PrepareData4CLS_SubDep function helps to prepare the training set and test set for positive, negative and mixed emotion classification. The signal data of each trial is divided into two parts according to 4:1, and the first and second parts of all trials of a subject form the training and test set respectively. 
 11. CLS.py: We implement personality prediction in this script. We test combinations of features from different modalities and four classifiers (MLP, kNN, SVM and RF). The experiment is carried out in a 5-fold cross validation across all subjects.
+12. subindep_groupkfold.py: Subject independent test.
  
 
 ## Usage
